@@ -1,0 +1,94 @@
+:root {
+  font-family: "IBM Plex Sans", "Space Grotesk", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #e9eef5;
+  background-color: #0b0d10;
+
+  --bg: #0b0d10;
+  --bg-elev: #12161b;
+  --text: #e9eef5;
+  --muted: #94a0b2;
+  --accent: #ffd200;
+  --border: #262c36;
+  --sidebar-bg: #0f1115;
+  --sidebar-border: #1d222b;
+  --sidebar-text: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 12, 16, 0.95) 0%, rgba(12, 14, 18, 0.98) 100%),
+    repeating-linear-gradient(0deg, rgba(255, 210, 0, 0.03) 0 1px, transparent 1px 24px),
+    repeating-linear-gradient(90deg, rgba(255, 210, 0, 0.03) 0 1px, transparent 1px 24px),
+    #0b0d10;
+  color: var(--text);
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #fff06a;
+}
+
+h1 {
+  margin: 0 0 16px 0;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+
+input,
+button {
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text);
+  background-color: var(--bg-elev);
+  transition: border-color 0.25s;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+button:active {
+  border-color: var(--accent);
+  background-color: #1a2230;
+}
+
+input,
+button {
+  outline: none;
+}
